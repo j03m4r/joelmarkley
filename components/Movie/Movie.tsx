@@ -43,6 +43,7 @@ const Movie = () => {
 			word.style.fontSize = "40px";
 			word.style.left = x + "px";
 			word.style.top = y + "px";
+			word.className = "popWord";
 			body?.appendChild(word);
 
 			setTimeout(() => {

@@ -10,7 +10,7 @@ body {
   background-color: #faf9f6;
 }
 
-span {
+.popWord {
   position: absolute;
   display: flex;
   justify-content: center;

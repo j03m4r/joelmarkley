@@ -55,7 +55,7 @@ const AnimatedDesc: React.FC<AnimatedDescProps> = ({children, className}) => {
 
     return (
         <div className="relative w-full">
-            <p ref={text} className={twMerge(`relative text-6xl font-semibold`, className)}>{children}</p>
+            <p ref={text} className={twMerge(`relative text-7xl`, className)}>{children}</p>
             {/* <div ref={underline} className="relative w-full border-b border-black mt-1"/> */}
         </div>
     )
