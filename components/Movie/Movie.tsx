@@ -19,7 +19,7 @@ const Movie = () => {
 	const targetMovieWidth = 60;
 	const targetMovieHeight = 40;
 
-	const words = ["Creative", "Effective", "Passionate", "Web Developer", "Software Developer", "Student"];
+	const words = ["Creative", "Passionate", "Web Developer", "Software Developer", "Student"];
 	const images = ['/images/middlebrook1.jpeg',
 	'/images/wyoming1.jpeg', '/images/wyoming2.jpeg', '/images/upnorth1.jpeg'];
 
