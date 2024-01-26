@@ -100,7 +100,7 @@ const Movie = () => {
 
     return (
         <div ref={container} className='relative h-[300vh]'>
-            <div ref={stickyMask} className='flex overflow-hidden sticky top-0 h-screen items-center justify-center' style={{ maskImage: "url('/images/JoelMarkley.svg')", maskPosition: '48.65% center', maskRepeat: 'no-repeat', maskSize: "80%"}}>
+            <div ref={stickyMask} className='flex overflow-hidden sticky top-0 min-h-[50vh] md:h-screen items-center justify-center' style={{ maskImage: "url('/images/JoelMarkley.svg')", maskPosition: '48.65% center', maskRepeat: 'no-repeat', maskSize: "80%"}}>
                 <div onMouseMove={(e) => onMouseMove(e.clientX, e.clientY)} className="flex min-h-screen min-w-screen flex-col items-center justify-center">
                     <Image ref={imageRef} src={imageSrc} width={800} height={650} alt='Movie' className='w-[100vw] h-[100vw] bg-black' onMouseMove={(e) => e.stopPropagation} />
                 </div>

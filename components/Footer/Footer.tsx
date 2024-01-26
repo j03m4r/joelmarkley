@@ -19,7 +19,7 @@ const Footer = () => {
     };
 
     return (
-        <div ref={footerRef} className="p-[5vw] flex justify-between text-lg">
+        <div ref={footerRef} className="p-[5vw] flex justify-between text-lg mt-[5vh] md:mt-0">
             <div className="flex gap-5 underline">
                 <motion.p variants={opacity} initial="initial" animate={isInView ? "inView" : "outView"} custom={0}>
                     <Link ref={githubRef} href="https://github.com/j03m4r" onMouseEnter={() => onMouseEnter(githubRef)} onMouseLeave={() => onMouseEnter(githubRef)}>Github</Link>
