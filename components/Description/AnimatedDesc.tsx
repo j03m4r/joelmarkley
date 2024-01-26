@@ -51,7 +51,7 @@ const AnimatedDesc: React.FC<AnimatedDescProps> = ({children, className}) => {
             });
         });
         return () => ctx.revert(); // <- cleanup!
-    }, [])
+    }, []);
 
     return (
         <div className="relative w-full">

@@ -23,7 +23,6 @@ const Movie = () => {
 	const images = ['/images/middlebrook1.jpeg',
 	'/images/wyoming1.jpeg', '/images/wyoming2.jpeg', '/images/upnorth1.jpeg'];
 
-	const [webkitMaskSize, setWebkitMaskSize] = useState("");
 	const [prevPos, setPrevPos] = useState<point>({x: 0, y: 0});
 	const [imageIdx, setImageIdx] = useState(0);
 	const [imageSrc, setImageSrc] = useState('/images/middlebrook1.jpeg');
@@ -58,8 +57,6 @@ const Movie = () => {
 	
 	const animate = () => {
 		if (stickyMask.current == null || !imageRef.current) return;
-		setWebkitMaskSize(stickyMask.current.style.webkitMaskSize);
-
 		// @ts-ignore
 		const maskSizeProgress = targetMaskSize * getScrollProgress();
 		stickyMask.current.style.webkitMaskSize = (initialMaskSize + maskSizeProgress) * 100 + "%";
@@ -103,7 +100,6 @@ const Movie = () => {
 
     return (
         <div ref={container} className='relative h-[300vh]'>
-            <div className="absolute right-2 top-2">{webkitMaskSize}</div>
             <div ref={stickyMask} className='flex overflow-hidden sticky top-0 h-screen items-center justify-center' style={{ maskImage: "url('/images/JoelMarkley.svg')", maskPosition: '48.65% center', maskRepeat: 'no-repeat', maskSize: "80%"}}>
                 <div onMouseMove={(e) => onMouseMove(e.clientX, e.clientY)} className="flex min-h-screen min-w-screen flex-col items-center justify-center">
                     <Image ref={imageRef} src={imageSrc} width={800} height={650} alt='Movie' className='w-[100vw] h-[100vw] bg-black' onMouseMove={(e) => e.stopPropagation} />
