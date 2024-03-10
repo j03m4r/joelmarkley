@@ -10,9 +10,7 @@ export default function Home() {
 		<main className="mb-[100vh] relative">
 			<Movie />
 			<Description />
-			{/* <Projects /> */}
 			<Projects />
-			{/* <Testing /> */}
 			<Footer />
 		</main>
 	)

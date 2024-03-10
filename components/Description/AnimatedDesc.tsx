@@ -21,7 +21,7 @@ const AnimatedDesc: React.FC<AnimatedDescProps> = ({children, className}) => {
                 scrollTrigger: {
                     trigger: text.current,
                     start: "0px bottom",
-                    end: "bottom+=300px bottom",
+                    end: "bottom+=250px bottom",
                     scrub: true,
                 },
                 left: "-300px",
