@@ -36,7 +36,7 @@ const projects = [
     },
     {
         title: "Dream Nails",
-        color: "#DB162F",
+        color: "#E02131",
         images: ["/images/dream-nails-1.png", "/images/dream-nails-2.png", "/images/dream-nails-3.png", "/images/dream-nails-4.png"],
         href: "https://github.com/j03m4r/dream-nails",
         mobile: false
