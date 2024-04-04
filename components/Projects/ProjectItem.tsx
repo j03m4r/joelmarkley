@@ -1,13 +1,9 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { opacity, slideUp } from "../Animations/TextAnims";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface ProjectItemProps {
     title: string;
@@ -19,7 +15,7 @@ interface ProjectItemProps {
     onMouseLeave: () => void;
 };
 
-const ProjectItem: React.FC<ProjectItemProps> = ({ title, color, images, href, mobile, onMouseEnter, onMouseLeave }) => {
+const ProjectItem: React.FC<ProjectItemProps> = ({ title, images, href, mobile, onMouseEnter, onMouseLeave }) => {
     const bgRef = useRef<HTMLAnchorElement>(null);
     const titleRef = useRef<HTMLParagraphElement>(null);
     const imageRef = useRef<HTMLDivElement>(null);
