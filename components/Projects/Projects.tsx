@@ -4,6 +4,20 @@ import gsap from "gsap";
 import ProjectItem from "./ProjectItem";
 
 const projects = [
+    {
+        title: "Dream Nails",
+        color: "#E02131",
+        images: ["/images/dream-nails-1.png", "/images/dream-nails-2.png", "/images/dream-nails-3.png", "/images/dream-nails-4.png"],
+        href: "https://github.com/j03m4r/dream-nails",
+        mobile: false
+    },
+    {
+      title: "Rate & Relate",
+      color: "#F04DBD",
+      images: ["/images/raterelate1.jpeg", "/images/raterelate2.jpeg", "/images/raterelate3.jpeg"],
+      href: "https://github.com/j03m4r/Raterelate.com",
+      mobile: false
+    },
     { 
       title: "Seventh Sky",
       color: "#A6F04D",
@@ -26,20 +40,6 @@ const projects = [
       images: ["/images/syllabase1.jpeg", "/images/syllabase2.jpeg", "/images/syllabase3.jpeg", "/images/syllabase4.jpeg"],
       href: "https://github.com/j03m4r/syllabase",
       mobile: false
-    },
-    {
-      title: "Rate & Relate",
-      color: "#F04DBD",
-      images: ["/images/raterelate1.jpeg", "/images/raterelate2.jpeg", "/images/raterelate3.jpeg"],
-      href: "https://github.com/j03m4r/Raterelate.com",
-      mobile: false
-    },
-    {
-        title: "Dream Nails",
-        color: "#E02131",
-        images: ["/images/dream-nails-1.png", "/images/dream-nails-2.png", "/images/dream-nails-3.png", "/images/dream-nails-4.png"],
-        href: "https://github.com/j03m4r/dream-nails",
-        mobile: false
     },
 ];
 
