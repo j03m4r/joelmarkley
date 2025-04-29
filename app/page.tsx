@@ -16,6 +16,13 @@ export type Project = {
 
 const projects: Project[] = [
     {
+        title: "Athledle",
+        color: "#BDF04D",
+        images: ["/images/athledle_sc_1_cropped.png", "/images/athledle_sc_2_cropped.png", "/images/athledle_sc_3_cropped.png"],
+        href: "https://github.com/j03m4r/athledle",
+        mobile: false
+    },
+    {
         title: "Dream Nails",
         color: "#E02131",
         images: ["/images/dream-nails-1.png", "/images/dream-nails-2.png", "/images/dream-nails-3.png", "/images/dream-nails-4.png"],
