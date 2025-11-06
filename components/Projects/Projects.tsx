@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import ProjectItem from "./ProjectItem";
-import { Project } from "@/app/page";
+import { Project } from "@/app/old_page";
 
 interface ProjectsProps {
     projects: Project[];
